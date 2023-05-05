@@ -1,0 +1,39 @@
+<view class="container" wx:if="{{isloading}}">
+  <scroll-view>
+    <swiper class='swiper1'>
+      <swiper-item>
+        <view class="header">
+          <view class="title">
+            <view>{{ songinfo.name }}</view>
+            <view>{{songinfo.author}}</view>
+          </view>
+          <view class="img">
+                <image src="{{songinfo.picUrl}}"/>
+          </view>
+
+        </view>
+      </swiper-item>
+
+      <swiper-item class="dd">
+        <scroll-view scroll-y scroll-into-view="{{scrollValue}}" scroll-with-animation='true'>
+          <view wx:for="{{lyric}}" id="scroll{{index}}" class="{{scrollValue=='scroll'+index?'active1':''}}">{{ item }}</view>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
+  </scroll-view>
+
+  <view class="musicProgress">
+    <view>{{currentTime}}</view>
+    <slider min="0" max="{{duration}}" class='sliders' step="1" block-size="1" value="{{current}}" bindchanging="changing" bindchange="change"></slider>
+    <view>{{totalTime}}</view>
+  </view>
+
+  <view class='tubiao'>
+    <text bindtap="playPrev" class='iconfont icon-shangyiqu101'></text>
+<image class="audio" bindtap="onMusicTap" src="{{startpauseimg}}"></image>
+
+    <text bindtap="playNext" class='iconfont icon-xiayiqu101'></text>
+  </view>
+
+
+</view>

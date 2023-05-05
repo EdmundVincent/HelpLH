@@ -1,0 +1,82 @@
+page {
+  background: linear-gradient(to bottom, #607176, #30484f);
+}
+.swiper1{
+  width: 100%;
+  height: 1000rpx;
+  display: flex;
+}
+.header{
+  width: 100%;
+  height: 1000rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50rpx;
+  box-sizing: border-box;
+}
+.img {
+  margin-top: 100rpx;
+   width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+  background-color: black;
+}
+.img>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.title {
+  text-align: center;
+  color: white;
+}
+.title view:nth-child(1){
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.title view:nth-child(2){
+  font-size: 13px;
+  color:#919d9e;
+}
+scroll-view {
+  height: 800rpx;
+  text-align: center;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 15px; 
+  color: #919d9e;
+  padding: 50rpx 0px;
+}
+.musicProgress{
+  display: flex;
+  padding: 40rpx 20rpx;
+  color: white;
+  font-weight:100;
+  font-size: 10px;
+  align-items: center;
+}
+.musicProgress slider{
+  flex: 1;
+}
+.sliders{
+  width: 472.44rpx;
+}
+.active1{
+  color:white;
+  font-size: 15px;
+}
+.tubiao{
+  height: 100rpx;
+  font-size: 3rem;
+  /* background: #374e55; */
+  background: linear-gradient(to bottom, #364d54, #314950);
+  bottom: 0px;
+}
+.tubiao>text{
+  margin-top: 45rpx;
+}
+
+.audio{
+  height: 100rpx;
+  width: 100rpx;
+}

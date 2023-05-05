@@ -1,0 +1,49 @@
+/* pages/openPage/openPage.wxss */
+
+
+/* page {
+  background: linear-gradient(to bottom, #607176, #30484f);
+} */
+
+/* 轮播图的样式 */
+
+/* .swiper-container
+{
+  height: 150px;
+} */
+
+/* .item
+{
+  height: 100%;
+  line-height: 150px;
+  text-align: center;
+} */
+
+
+
+/* 怎么让小程序的图片宽度撑满屏幕？？？ */
+swiper {
+  height: 400rpx;
+  /* height: calc(750rpx * 759/1028);  未解决*/
+  /* height: calc(100vw * 759 /1028); */
+  width: 100%;
+}
+swiper-item {
+  height: 100%;
+  width: 100%;
+}
+.slide-image{
+  height: 100%;
+  width: 150px;
+}
+
+
+/* swiper-item:nth-child(1) .item{
+  background-color: lightblue;
+}
+swiper-item:nth-child(2) .item{
+  background-color: lightblue;
+}
+swiper-item:nth-child(3) .item{
+  background-color: lightblue;
+} */
